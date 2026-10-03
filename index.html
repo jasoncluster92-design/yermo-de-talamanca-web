@@ -268,15 +268,30 @@ footer strong { color: var(--brasa); font-weight: 500; }
 
     <section id="precios">
       <h2>Qué se vende, y a cuánto</h2>
-      <p class="bajada">Precios en dólares (USD) · vigentes desde el 24 de septiembre de 2026</p>
-      <p>Todos los jugadores tienen el mismo juego: las mismas misiones, los mismos calabozos, las mismas armas y armaduras, el mismo Trueque. Lo que se vende da comodidad y cosas que se ven. Los rangos se pagan una sola vez, cada uno incluye todo lo del anterior, y quien ya tiene uno paga la diferencia para subir.</p>
+      <p class="bajada">Precios en dólares (USD) y en doblones · vigentes desde el 3 de octubre de 2026</p>
+      <p>Todos los jugadores tienen el mismo juego: las mismas misiones, los mismos calabozos, las mismas armas y armaduras, el mismo Trueque. Lo que se vende da comodidad y cosas que se ven.</p>
+      <h3>Los doblones</h3>
+      <p>En la tienda se compran <strong>doblones</strong>, la moneda de la tienda; con ellos, dentro del juego (<code>/doblones</code>), se compran los rangos, días de Expedicionario, partículas y títulos. No compran pesetas, objetos ni nada que dé ventaja, no se pasan a otros jugadores, no se cambian por dinero y no vencen.</p>
+      <div class="tabla-caja" role="region" aria-label="Paquetes de doblones" tabindex="0">
+        <table>
+          <thead><tr><th>Paquete</th><th>Precio</th><th>Doblones</th></tr></thead>
+          <tbody>
+            <tr><td>Bolsita</td><td>5 USD</td><td>500</td></tr>
+            <tr><td>Bolsa</td><td>10 USD</td><td>1.050 <span class="nota">(5 % más)</span></td></tr>
+            <tr><td>Cofre</td><td>20 USD</td><td>2.200 <span class="nota">(10 % más)</span></td></tr>
+            <tr><td>Arca</td><td>50 USD</td><td>5.750 <span class="nota">(15 % más)</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Los rangos</h3>
+      <p>Se pagan una sola vez, con doblones. Cada uno incluye todo lo del anterior, y quien ya tiene uno paga la diferencia para subir.</p>
       <div class="tabla-caja" role="region" aria-label="Rangos y precios" tabindex="0">
         <table>
           <thead>
             <tr><th></th><th class="rango"><img src="img/rango-residente.png" width="40" height="40" alt="">Residente</th><th class="rango"><img src="img/rango-colono.png" width="40" height="40" alt="">Colono</th><th class="rango"><img src="img/rango-baqueano.png" width="40" height="40" alt="">Baqueano</th><th class="rango"><img src="img/rango-supervisor.png" width="40" height="40" alt="">Supervisor</th></tr>
           </thead>
           <tbody>
-            <tr class="precio"><td>Precio</td><td>Gratis</td><td>5 USD</td><td>12 USD</td><td>25 USD</td></tr>
+            <tr class="precio"><td>Precio</td><td>Gratis</td><td>500 doblones</td><td>1.200 doblones</td><td>2.500 doblones</td></tr>
             <tr><td>Prefijo con color en el chat y en la lista de jugadores</td><td class="no">—</td><td class="pref p-colono">[Colono]</td><td class="pref p-baqueano">[Baqueano]</td><td class="pref p-supervisor">[Supervisor]</td></tr>
             <tr><td>Hogares (<code>/sethome</code>)</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
             <tr><td>Ponerte un bloque en la cabeza (<code>/hat</code>)</td><td class="no">—</td><td class="si">Sí</td><td class="si">Sí</td><td class="si">Sí</td></tr>
@@ -288,9 +303,14 @@ footer strong { color: var(--brasa); font-weight: 500; }
         </table>
       </div>
       <div class="suscripcion">
-        <h3><img src="img/rango-expedicionario.png" width="28" height="28" alt="">Expedicionario, la suscripción</h3>
-        <span class="monto">3 USD al mes</span>
-        <p>Una marca ✦ junto a tu nombre, un hogar más y la partícula del mes, que te quedas para siempre aunque canceles. Se suma al rango que tengas y se cancela cuando quieras.</p>
+        <h3><img src="img/rango-expedicionario.png" width="28" height="28" alt="">Expedicionario</h3>
+        <span class="monto">3 USD al mes · o 300 doblones por 30 días</span>
+        <p>Una marca ✦ junto a tu nombre, un hogar más y la partícula del mes, que te quedas para siempre aunque se termine. Se suma al rango que tengas. La suscripción se cancela cuando quieras.</p>
+      </div>
+      <div class="suscripcion">
+        <h3>Cosméticos sueltos</h3>
+        <span class="monto">250 a 600 doblones</span>
+        <p>Partículas (250 doblones cada una): Luciérnagas del cafetal, Chispas de los Cables, Notas de marimba, Esporas del monte, Ánimas, Escarcha del páramo, Polvo de oro de Abangares, Vapor de las termales y Estrellas de Nicoya. Títulos de tienda: «Cafetalero de altura», «Sabanero de Guanacaste», «Marimbero» y «Pescador del Golfo» (300) y «Mecenas del Yermo» y «Guardián de la Rosa» (600). En <code>/titulos</code> dicen que se compraron.</p>
       </div>
       <div class="nunca gratis">
         <h3>Lo que se gana jugando, gratis</h3>
@@ -309,6 +329,7 @@ footer strong { color: var(--brasa); font-weight: 500; }
       <ul class="lista">
         <li><strong>Beneficios dentro de este servidor</strong>, nada más: los de la lista de precios. Son de comodidad o se ven. Ninguno da ventaja para pelear, juntar recursos o avanzar, porque así lo piden las reglas de Mojang y porque así lo queremos.</li>
         <li>No compras objetos del juego, ni pesetas, ni cajas al azar.</li>
+        <li><strong>Los doblones</strong> son la moneda de la tienda: se gastan dentro del juego (<code>/doblones</code>) en lo de la lista de precios y solo sirven para eso. No se pasan ni se venden a otros jugadores, no se cambian por pesetas ni por dinero, y no vencen mientras el servidor exista. Lo que compras con ellos es para siempre (salvo los 30 días de Expedicionario).</li>
         <li>Lo que compras es un permiso para usar esos beneficios mientras el servidor exista. No es dinero, no se cambia por dinero y no pasa a otros servidores.</li>
       </ul>
       <h3>Cómo se entrega</h3>
@@ -324,13 +345,13 @@ footer strong { color: var(--brasa); font-weight: 500; }
       <h3>Devoluciones</h3>
       <ul class="lista">
         <li><strong>Si no te llegó lo que compraste, o se cobró de más o dos veces</strong>, te devolvemos el dinero.</li>
-        <li>Si compraste por error y no has usado el beneficio, escríbenos en los primeros 7 días y lo vemos.</li>
+        <li>Si compraste por error y no has usado el beneficio (o no gastaste ninguno de esos doblones), escríbenos en los primeros 7 días y lo vemos.</li>
         <li>Los beneficios ya usados no se devuelven, salvo lo que diga la ley de protección al consumidor de tu país.</li>
         <li><strong>Si te sancionan por romper las reglas, no se devuelve lo pagado.</strong> Un rango no protege de una sanción.</li>
-        <li>Si alguien pide un contracargo al banco en vez de escribirnos, se suspende la cuenta mientras se aclara.</li>
+        <li>Si alguien pide un contracargo al banco en vez de escribirnos, se suspende la cuenta mientras se aclara y se descuentan los doblones de esa compra.</li>
       </ul>
       <h3>Si el servidor cierra o cambia</h3>
-      <p>Lo avisamos con al menos 30 días. Si un beneficio deja de existir, te damos uno equivalente. Las suscripciones se cancelan y no se cobra el mes siguiente.</p>
+      <p>Lo avisamos con al menos 30 días, y desde ese aviso no se venden más doblones. Si un beneficio deja de existir, te damos uno equivalente. Las suscripciones se cancelan y no se cobra el mes siguiente.</p>
       <h3>Menores de edad</h3>
       <p>Si eres menor de edad, pide permiso a tu mamá, tu papá o quien te cuide <strong>antes de comprar</strong>. Una madre, un padre o un tutor que encuentre una compra hecha sin permiso puede escribirnos.</p>
     </section>
