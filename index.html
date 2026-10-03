@@ -152,6 +152,10 @@ tr.precio td:first-child { font-size: 12px; letter-spacing: .1em; text-transform
 .pref { font-family: var(--mono); font-size: 13px; }
 .p-colono { color: #7fbf6a; } .p-baqueano { color: #e0ba5b; } .p-supervisor { color: #5fd4e0; }
 
+.boton-tienda { display: inline-block; font-family: var(--mono); font-size: 14px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--tinta); background: var(--oro); padding: 10px 18px; text-decoration: none; margin: 8px 0 4px; }
+.boton-tienda:hover { background: #e2bd66; }
+tr.precio small { font-size: 12px; color: var(--gris); }
 .suscripcion { margin-top: 16px; border: 1px solid var(--linea); background: var(--panel); padding: 16px 18px;
   display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 24px; align-items: baseline; }
 .suscripcion h3 { margin: 0; }
@@ -283,15 +287,16 @@ footer strong { color: var(--brasa); font-weight: 500; }
           </tbody>
         </table>
       </div>
+      <p><a class="boton-tienda" href="https://yermo-de-talamanca.tebex.store">Ir a la tienda</a></p>
       <h3>Los rangos</h3>
-      <p>Se pagan una sola vez, con doblones. Cada uno incluye todo lo del anterior, y quien ya tiene uno paga la diferencia para subir.</p>
+      <p>Se pagan una sola vez, directo en la tienda en dólares o con doblones dentro del juego. Cada uno incluye todo lo del anterior, y al subir se paga solo la diferencia.</p>
       <div class="tabla-caja" role="region" aria-label="Rangos y precios" tabindex="0">
         <table>
           <thead>
             <tr><th></th><th class="rango"><img src="img/rango-residente.png" width="40" height="40" alt="">Residente</th><th class="rango"><img src="img/rango-colono.png" width="40" height="40" alt="">Colono</th><th class="rango"><img src="img/rango-baqueano.png" width="40" height="40" alt="">Baqueano</th><th class="rango"><img src="img/rango-supervisor.png" width="40" height="40" alt="">Supervisor</th></tr>
           </thead>
           <tbody>
-            <tr class="precio"><td>Precio</td><td>Gratis</td><td>500 doblones</td><td>1.200 doblones</td><td>2.500 doblones</td></tr>
+            <tr class="precio"><td>Precio</td><td>Gratis</td><td>5 USD<br><small>o 500 doblones</small></td><td>12 USD<br><small>o 1.200 doblones</small></td><td>25 USD<br><small>o 2.500 doblones</small></td></tr>
             <tr><td>Prefijo con color en el chat y en la lista de jugadores</td><td class="no">—</td><td class="pref p-colono">[Colono]</td><td class="pref p-baqueano">[Baqueano]</td><td class="pref p-supervisor">[Supervisor]</td></tr>
             <tr><td>Hogares (<code>/sethome</code>)</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
             <tr><td>Ponerte un bloque en la cabeza (<code>/hat</code>)</td><td class="no">—</td><td class="si">Sí</td><td class="si">Sí</td><td class="si">Sí</td></tr>
